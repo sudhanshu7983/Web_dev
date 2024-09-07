@@ -1,0 +1,25 @@
+fieldset{
+  color: blanchedalmond;
+  
+}
+body{
+  background-color:black ;
+}
+body{
+  box-shadow: 1cap;
+}
+fieldset{
+  text-align: left;
+  text-decoration:none;
+  font-weight: bold;
+  font-family: 'Times New Roman';
+  text-shadow: rgb(182, 17, 17);
+  text-transform: capitalize;
+  border: 2px solid wheat;
+  border-radius: 30%;
+  padding-left: 100px;
+  
+}
+button{
+  text-align: center;
+}
