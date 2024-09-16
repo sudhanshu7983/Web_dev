@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudhanshu - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="" class="photo">
+            </div>
+            <div class="left">Sudhanshu's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#projects">Projects</a></li> <!-- Updated link -->
+                    <li><a href="#Contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is
+                <span class="purple">Sudhanshu</span>
+                <div>and I am a passionate </div>
+                <span id="element"></span>
+                <script>
+                    var typed = new Typed('#element', {
+                        strings: ['Web Developer', 'Engineer', 'Web Designer'],
+                        typeSpeed: 50,
+                    });
+                </script>
+            </div>
+            <div class="rightsection">
+                <img src="web.png" alt="Web development illustration">
+            </div>
+        </section>
+        <hr>
+        <section id="about-me" class="secondsection">
+            <span class="grey">Who am I?</span>
+
+            <h1>About Me</h1>
+
+            <div class="secondrightsection">
+                <img src="about.png" alt="About me illustration">
+            </div>
+            <hr>
+            <br>
+            <h3>Education</h3>
+            <br>
+            <ul>
+                <li>Hi, I'm <span class="purple">Sudhanshu Pathak</span>, currently studying <span class="purple">B.Tech</span> at <span class="purple">GLA University</span>, where I am building a solid foundation in programming and web development.</li>
+            </ul>
+            <br>
+            <h3>Find Me Online</h3>
+            <div class="social-links">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/sudhanshu-pathak-516713264/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://leetcode.com/u/sudhanshuK7983/" target="_blank">LeetCode</a></li>
+                    <li><a href="https://github.com/sudhanshu7983" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.instagram.com/sudhanshu_pathak7983/?next=%2F" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section id="projects" class="projectsection">
+            <span class="grey">My Work</span>
+
+            <h1>Projects</h1>
+
+            <div class="projectlist">
+                <h3>1. Portfolio Website</h3>
+                <p>This is a personal portfolio website where I showcase my skills, projects, and experience.</p>
+
+                <h3>2. E-commerce Website</h3>
+                <p>An e-commerce platform built using HTML, CSS, and JavaScript, allowing users to browse products, add them to a cart, and proceed to checkout.</p>
+            </div>
+        </section>
+    </main>
+   <footer id="Contact">
+    <div class="footer">
+        <h2>Contact Me</h2>
+        <br>
+        <ul>
+            <li><strong>Email:</strong> sudhanshu@gla.ac.in</li>
+            <li><strong>Phone:</strong> +91 7983275180</li>
+            <li><strong>Location:</strong> Mathura, Uttar Pradesh, India</li>
+        </ul>
+        <br>
+
+        <h3>Leave a Message</h3>
+        <form action="mailto:sudhanshu@gla.ac.in" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+        <br>
+        <p>&copy; 2024 Sudhanshu Pathak. All rights reserved.</p>
+    </div>
+</footer>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>   
+</body>
+
+</html>

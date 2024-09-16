@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+}
+.logo .photo {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    border: 2px solid #fff; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(154, 154, 240);
+    font-size: 1.02rem;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.firstsection > div {
+    width: 30%;
+}
+
+.leftsection {
+    font-size: 3rem;
+    margin: 50px 0;
+}
+
+.rightsection img {
+    width: 90%;
+    margin: 50px 0;
+    position: relative;
+    animation-name: blurAndRotate;
+  animation-duration: 3s;
+  animation-timing-function:linear;
+  animation-delay: 1s;
+  animation-iteration-count:1;
+  animation-direction:normal;
+}
+
+
+
+.purple {
+    color: blueviolet;
+}
+
+.grey {
+    color: grey;
+}
+
+#element {
+    color: blueviolet;
+}
+
+.secondsection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+hr {
+    border: 0;
+    background-color: rgb(151, 151, 235);
+    height: 0.1px;
+    margin: 80px 80px;
+}
+
+.secondsection hr {
+    border: 0;
+    background-color: rgb(151, 151, 235);
+    height: 0.1px;
+    margin: 30px;
+}
+
+.secondsection h1 {
+    font-size: 2rem;
+}
+
+.secondsection h3 {
+    font-size: 1.5rem;
+}
+
+.secondrightsection {
+    text-align: right;
+}
+
+.secondrightsection img {
+    float: right; 
+    width: 20%;
+    margin-left: 20px; 
+    display: block;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px blueviolet;
+    animation: glowAnimation 2s infinite alternate;
+}
+
+@keyframes glowAnimation {
+    from {
+        box-shadow: 0 0 10px blueviolet;
+    }
+    to {
+        box-shadow: 0 0 20px blueviolet, 0 0 30px blueviolet;
+    }
+}
+
+.projectlist h3 {
+    color: blueviolet;
+}
+
+.projectlist p {
+    margin-bottom: 20px;
+}
+
+.social-links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: blueviolet;
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links ul li {
+    margin: 10px 0;
+}
+
+.social-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links ul li a:hover {
+    color: blueviolet;
+}
+.projectsection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+.projectsection h3{
+  margin: 20px;  
+}
+
+footer {
+background-color: #0e0e1a;
+color: white;
+padding: 40px;
+text-align: center;
+}
+
+.footer h2, .footer h3 {
+color: white;
+}
+
+.footer ul {
+list-style: none;
+padding: 0;
+}
+
+
+form input, form textarea {
+width: 90%;
+padding: 10px;
+margin: 10px 0;
+border: 1px solid white;
+background-color: rgb(18, 18, 62);
+color: white;
+font-size: 1rem;
+border-radius: 5px;
+}
+
+form button {
+padding: 10px 20px;
+border: none;
+background-color: rgb(66, 6, 122);
+color: white;
+font-size: 1rem;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 10px;
+}
+
+form button:hover {
+background-color: rgb(154, 154, 240);
+}
+
+.footer p {
+margin-top: 30px;
+font-size: 0.9rem;
+color: grey;
+}
+
+
+
+@media (max-width: 768px) {
+form input, form textarea {
+width: 100%;
+}
+
+.footer ul li {
+margin: 5px 0;
+}
+}
